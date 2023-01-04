@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url("images/bg-intro-desktop.png");
+    height: 100vh;
+    background-color: hsl(0, 100%, 74%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 59rem;
+    margin: 50px 10px;
+
+}
+
+.content_1{
+    width: 55%;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+button{
+    width: 100%;
+    color: #fff;
+    border: none;
+}
+
+.try{
+    padding: 15px;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 7px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px hsla(249, 10%, 26%, 0.4);
+}
+
+.try span{
+    font-weight: 700;
+}
+
+input{
+    width: 95%;
+    margin: 10px auto;
+    border: 1px solid hsl(249, 10%, 26%);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+input[type="submit"]{
+    font-weight: 500;
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 5px hsla(249, 10%, 26%, 0.4);
+}
+
+input[type="submit"]:hover{
+    background-color: hsl(154, 76%, 65%);
+    cursor: pointer;
+}
+
+.form{
+    background-color: #fff;
+    border-radius: 5px;
+    color: #000;
+    padding: 20px;
+    box-shadow: 0px 5px hsla(249, 10%, 26%, 0.4);
+}
+
+.terms{
+    font-size: 10px;
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+}
+
+.terms span{
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+.terms span:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 470px){
+    body{
+        height: auto;
+        text-align: center;
+    }
+    .container{
+        display: block;
+        margin: 50px 20px;
+    }
+
+    .try{
+        margin-top: 50px;
+        padding: 15px 80px;
+    }
+
+    .content_1{
+        width: 100%;
+    }
+}
